@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4364938f-807a-4f58-97b7-aef3dfe2ce7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GrilleTuiles.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MoteurJeu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tuile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ColorsInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IHM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TilesGrid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrilleTuiles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Jeu2048.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MoteurJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tuile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
