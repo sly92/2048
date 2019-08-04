@@ -4,7 +4,7 @@
 public class main {
 
     public static void main (String[] args) {
-        new Jeu2048 (MoteurJeu.getInstance());
+        new IHM(GameEngine.getInstance());
     }
 }
 
