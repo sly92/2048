@@ -10,6 +10,7 @@ public class GameEngine extends Observable {
     public static final int GAUCHE = 3;
     private int size;
     private int score;
+    private int best_score = 0;
     private TilesGrid gridGame;
     private int nbMove;
     private boolean win;
@@ -42,9 +43,8 @@ public class GameEngine extends Observable {
     public int getSize() {
         return this.size;
     }
-    public int getScore() {
-        return this.score;
-    }
+    public int getScore() {return this.score; }
+    public int getBestScore() {return this.best_score; }
     public TilesGrid getTilesGrid() {
         return this.gridGame;
     }
@@ -158,6 +158,9 @@ public class GameEngine extends Observable {
         }
         else
         {
+            System.err.println(this.score+"  "+this.best_score);
+            if(this.score > this.best_score)
+            this.best_score = this.score;
             JOptionPane.showMessageDialog(null, "You lose ! :/");
         }
     }

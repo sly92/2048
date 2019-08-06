@@ -67,8 +67,10 @@ public class IHM extends JFrame implements ColorsInterface{
     public JPanel creePanelDroite() {
         JPanel pDroite = new JPanel(new FlowLayout());
         this.jtf_best_score = new JTextField(10);
-        jtf_best_score.setEditable(false);
-        pDroite.add(jtf_best_score);
+        this.jtf_best_score.setEditable(false);
+        pDroite.add(new JLabel("Meilleur score"));
+        pDroite.add(this.jtf_best_score);
+
         return pDroite;
     }
 
@@ -133,6 +135,7 @@ public class IHM extends JFrame implements ColorsInterface{
                 IHM.this.ge.move(GameEngine.BAS);
             }
 
+            jtf_best_score.setText("" + ge.getBestScore());
             jtf_score.setText("" + ge.getScore());
             jtf_move.setText("" + ge.getNbMove());
             gridRefresh();

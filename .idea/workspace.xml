@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4364938f-807a-4f58-97b7-aef3dfe2ce7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeu2048/ColorsInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeu2048/ColorsInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeu2048/GameEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeu2048/GameEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeu2048/IHM$BoutonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeu2048/IHM$BoutonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeu2048/IHM$MyKeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeu2048/IHM$MyKeyListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jeu2048/IHM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jeu2048/IHM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ColorsInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ColorsInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IHM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IHM.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +32,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Bureau/Projet DUT/INO" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Bureau/Projet DUT/Calculatrice" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
