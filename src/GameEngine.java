@@ -1,7 +1,14 @@
+import javafx.beans.binding.IntegerBinding;
+
 import javax.swing.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Observable;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.*;
 
 public class GameEngine extends Observable {
     public static final int HAUT = 0;
@@ -10,7 +17,7 @@ public class GameEngine extends Observable {
     public static final int GAUCHE = 3;
     private int size;
     private int score;
-    private int best_score = 0;
+    private int best_score;
     private TilesGrid gridGame;
     private int nbMove;
     private boolean win;
@@ -44,7 +51,17 @@ public class GameEngine extends Observable {
         return this.size;
     }
     public int getScore() {return this.score; }
-    public int getBestScore() {return this.best_score; }
+    public int getBestScore() {
+        List<String> lines = Collections.emptyList();
+        try{
+            Path file = Paths.get("bestscore.txt");
+            lines = Files.readAllLines(file, StandardCharsets.UTF_8);
+            System.out.println(lines.get(0));
+            return Integer.parseInt(lines.get(0));
+        }catch (Exception e){//Catch exception if any
+           return 0;
+        }
+    }
     public TilesGrid getTilesGrid() {
         return this.gridGame;
     }
@@ -158,10 +175,21 @@ public class GameEngine extends Observable {
         }
         else
         {
-            System.err.println(this.score+"  "+this.best_score);
-            if(this.score > this.best_score)
-            this.best_score = this.score;
+            if(this.score > this.best_score) {
+                this.best_score = this.score;
+                this.setBestScore(this.best_score);
+            }
             JOptionPane.showMessageDialog(null, "You lose ! :/");
+        }
+    }
+
+    private void setBestScore(int score){
+        try{
+            Path file = Paths.get("bestscore.txt");
+            List<String> lines = Arrays.asList(""+score);
+            Files.write(file, lines, StandardCharsets.UTF_8);
+        }catch (Exception e){
+            System.err.println("Error: " + e.getMessage());
         }
     }
 
